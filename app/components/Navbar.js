@@ -4,6 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import NavLink from './NavLink'
 import { motion } from 'framer-motion'
+import React from 'react'
 
 const links = [
   { title: 'Home', url: '/' },
@@ -13,7 +14,7 @@ const links = [
 ]
 
 export default function nav() {
-  const [isOpen, setIsOpen] = useState(false)
+  const [isOpen, setIsOpen] = react.useState(false)
 
   const topVariants = {
     closed: {

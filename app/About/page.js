@@ -2,15 +2,16 @@
 import { delay, motion, useInView, useScroll } from 'framer-motion'
 import { useRef } from 'react'
 import Brain from '../components/Brain';
+import React from 'react';
 export default function page() {
-  const containerRef=useRef();
-  const {scrollYProgress}=useScroll({container:containerRef});
+  const containerRef=react.useRef();
+  const {scrollYProgress}=react.useScroll({container:containerRef});
 
-const skillRef=useRef();
-const isSkillRefInView=useInView(skillRef,{margins:"-100px" });
+const skillRef=react.useRef();
+const isSkillRefInView=react.useInView(skillRef,{margins:"-100px" });
 
-const experianceRef=useRef();
-const isExperianceRefInView=useInView(experianceRef,{margins:"-100px" });
+const experianceRef=react.useRef();
+const isExperianceRefInView=react.useInView(experianceRef,{margins:"-100px" });
 
 
   return (
