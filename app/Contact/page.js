@@ -1,6 +1,6 @@
 "use client";
 import { motion } from 'framer-motion'
-import React, { useRef, useState } from 'react'
+import { useRef, useState } from 'react'
 import emailjs from '@emailjs/browser';
 
 export default function page() {

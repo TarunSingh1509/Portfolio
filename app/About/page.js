@@ -1,6 +1,6 @@
 "use client";
 import { delay, motion, useInView, useScroll } from 'framer-motion'
-import React, { useRef } from 'react'
+import { useRef } from 'react'
 import Brain from '../components/Brain';
 export default function page() {
   const containerRef=useRef();
