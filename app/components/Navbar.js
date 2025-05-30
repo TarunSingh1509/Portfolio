@@ -14,7 +14,7 @@ const links = [
 ]
 
 export default function Nav() {
-  const [isOpen, setIsOpen] = useState(true)
+  const [isOpen, setIsOpen] = useState(false)
 
   const topVariants = {
     closed: {
