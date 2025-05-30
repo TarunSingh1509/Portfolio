@@ -1,14 +1,14 @@
 "use client";
 import { motion } from 'framer-motion'
-import { useRef, useState } from 'react'
+import { useRef, useState , react} from 'react'
 import emailjs from '@emailjs/browser';
-import react from 'react';
-export default function page() {
-  const [success, setSuccess] = react.useState(false);
-  const [error, setError] = react.useState(false);
+// import react from 'react';
+export default function Page() {
+  const [success, setSuccess] = useState(false);
+  const [error, setError] = useState(false);
   const text = "Say Hello";
 
-  const form = react.useRef();
+  const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();

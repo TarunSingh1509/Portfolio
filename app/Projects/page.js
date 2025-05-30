@@ -3,9 +3,7 @@ import { motion, useScroll, useTransform } from 'framer-motion'
 import { useRef } from 'react'
 import Image from 'next/image';
 import Link from 'next/link';
-import React from 'react';
-
-
+import react from 'react';
 
 
 const items = [
@@ -44,10 +42,10 @@ const items = [
 ];
 
 
-export default function page() {
-  const ref = react.useRef();
-  const { scrollYProgress } = react.useScroll({ target: ref })
-  const x = react.useTransform(scrollYProgress, [0, 1], ["0%", "-80%"])
+export default function Page() {
+  const ref = useRef();
+  const { scrollYProgress } = useScroll({ target: ref })
+  const x = useTransform(scrollYProgress, [0, 1], ["0%", "-80%"])
 
 
   return (
